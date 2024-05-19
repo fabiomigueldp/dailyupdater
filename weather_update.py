@@ -1,20 +1,10 @@
 import os
 import requests
 import math
-from dotenv import load_dotenv
 from datetime import datetime
 
 # Configurações iniciais
-# Importar a chave da API do arquivo .env
-load_dotenv()
-WEATHER_API_KEY = os.environ.get("WEATHER_API_KEY")
-
-# Verifique se a chave da API está definida
-if not WEATHER_API_KEY:
-    raise Exception("A chave da API do clima não está definida no arquivo .env")
-
-# Salve a chave da API na variável key
-key = WEATHER_API_KEY
+key = os.getenv('WEATHER_API_KEY')
 locationKey = "2733005"
 
 emojis = {
