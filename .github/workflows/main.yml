@@ -34,7 +34,7 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git add chat.svg
-        git commit -m 'Update chat.svg with latest weather data'
+        git commit -m 'Update chat.svg with latest data'
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
